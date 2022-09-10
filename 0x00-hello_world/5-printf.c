@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-  * main - print the string in the function
+  * main - print the string in the printf fiunction
   *
   * Description: using the main function
   * this program print "with proper grammar, but the outcome is a piece of art,"
