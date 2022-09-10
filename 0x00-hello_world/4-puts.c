@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
  * main-entry
+ *descripition- print
+ *return : 0
  */
 int main(void)
 {
