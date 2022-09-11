@@ -1,12 +1,10 @@
 #include <stdio.h>
-
 /**
- 
- * main - Prints sized of characters
+ * main - print the string in the printf function
  *
- *    *Return: Always 0 (success)
- *
- *     */
+ * Description: using the main function
+ * Return: 0
+ */
 
 int main(void)
 
