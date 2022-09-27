@@ -1,5 +1,6 @@
 #ifndef main_h
 #define main_h
+#include <stdio.h>
 
 int _putchar(char c);
 char *_memcpy(char *dest, char *src, unsigned int n);
