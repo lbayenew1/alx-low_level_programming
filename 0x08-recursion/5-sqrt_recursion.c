@@ -25,5 +25,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	else
-		return (sqrt_u(n, x));
+		return (sqrt_u(n, 0));
 }
