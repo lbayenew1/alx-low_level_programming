@@ -19,7 +19,7 @@ int main (int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	op = argv[2];
 	num2 = atoi(argv[3]);
-	if (get_op_func(op) == NULL || op[1] != '\0')
+	if (get_op_func(op) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
