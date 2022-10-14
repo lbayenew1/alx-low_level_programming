@@ -74,26 +74,25 @@ void print_all(const char * const format, ...)
 
 	i = 0;
 	va_start(arg, format);
-	while (format[i])
+	while (format[i] && format)
 	{
 		switch (format[i])
 		{
 			case 'c':
 				print_char(arg);
-				printf("%c ", comma);
 				break;
 			case 'i':
 				print_int(arg);
-				printf("%c ", comma);
 				break;
 			case 'f':
 				print_float(arg);
-				printf("%c ", comma);
 				break;
 			case 's':
 				print_str(arg);
 				break;
 		}
+		if (i < 3 && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f'))
+			printf("%c ", comma);
 		i++;
 	}
 	printf("\n");
