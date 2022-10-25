@@ -1,21 +1,22 @@
 #include "lists.h"
 
 /**
- * free_listint - free all nodes
+ * free_listint2 - free all nodes
  * @head: point to first node
  * Return: nothing
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *temp, *nextnode;
+	listint_t *nextnode, *tmp;
 
-	temp = *head;
 	nextnode = *head;
-	while (temp->next != NULL)
+	tmp = *head;
+	while (tmp->next != NULL)
 	{
-		temp = temp->next;
+		tmp = tmp->next;
 		free(nextnode);
-		nextnode = temp;
+		nextnode = tmp;
 	}
-	free(temp);
+	free(tmp);
+	*head = NULL;
 }
