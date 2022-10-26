@@ -29,8 +29,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	else
 	{
-		*head = tmp;
 		free(prevnode);
+		*head = tmp;
 	}
 	return (1);
 }
