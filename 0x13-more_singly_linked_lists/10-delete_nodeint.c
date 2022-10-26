@@ -19,7 +19,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			prevnode = prevnode->next;
 		}
 	}
-	if (*head == NULL)
+	if (*head == NULL || (prevnode->next == NULL && index != 0))
 		return (-1);
 	tmp = prevnode->next;
 	if (index != 0)
